@@ -126,9 +126,64 @@ form button:hover {
     background-color: #007bff;
 }
 
-footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+footer{
+
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        border-top: 1px solid #495057;
+        
+    }
+
+
+    @media (max-width: 768px) {
+
+        header h1 {
+
+            font-size: 1.8rem;
+
+        }
+
+        nav ul li {
+
+            margin: 0 10px;
+
+        }
+
+        main {
+
+            padding: 15px;
+
+        }
+
+        section h2 {
+
+            font-size: 1.6rem;
+
+        }
+        
+
+    }
+    @media (max-width: 480px) {
+        
+        nav ul {
+            flex-direction: column;
+        }
+
+        nav ul li {
+            
+            margin: 10px 0;
+        }
+
+        main {
+
+            margin: 10px;
+        }
+
+        form input, form textarea {
+
+            padding: 8px;
+        }
+    }
